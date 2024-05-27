@@ -28,12 +28,16 @@
   
     <h2>
         测试云数据
-        <button id="pushAndGet">提交上去，拉取下来</button> 
+
+        <button id="pushAndGet" onclick="setHigh()">提交上去，拉取下来</button> 
     </h2>
     <div id="Box">
 
         <textarea name="" id="text" ></textarea>
     </div>
+    <ul id="comment">
+        <li>首条---------------------------到底了</li>
+    </ul>
     <!-- <text type="text" id=""> -->
 </body>
 <script src="//code.bdstatic.com/npm/leancloud-storage@4.12.0/dist/av-min.js"></script>
