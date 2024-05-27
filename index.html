@@ -12,7 +12,15 @@
     }
     #pushAndGet{
         background-color: brown;
-        width: 290px;
+        width: 100px;
+        height: 30px;
+        border: none;
+        border-radius: 6px;
+        color: white;
+    }
+    #ref{
+        background-color: rgb(33, 211, 161);
+        width: 100px;
         height: 30px;
         border: none;
         border-radius: 6px;
@@ -29,7 +37,8 @@
     <h2>
         测试云数据
 
-        <button id="pushAndGet" onclick="setHigh()">提交上去，拉取下来</button> 
+        <button id="pushAndGet" onclick="setHigh()">提交</button> 
+        <button id="ref" onclick="refto()">刷新一下页面</button>
     </h2>
     <div id="Box">
 

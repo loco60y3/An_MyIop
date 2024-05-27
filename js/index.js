@@ -33,6 +33,7 @@ function setHigh() {
         newComms.set("Text", textTEST.value);
         newComms.save().then((comm) => {
             console.log("保存成功", comm);
+            textTEST.value = ``;
             let li = document.createElement('li');
             li.textContent = textTEST.value;
             commentList.insertBefore(li, commentList.firstChild);
@@ -40,6 +41,9 @@ function setHigh() {
             console.log(error);
         });
     }
+}
+function refto(){
+    location.reload()
 }
 // 错误处理也是好的做法  
 testDomeQuery.find().catch(error => {
